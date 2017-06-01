@@ -38,5 +38,5 @@ def car(name):
 light = threading.Thread(target=lighter,)
 light.start()
 
-car1 = threading.Thread(target=car,args=("Tesla",))
+car1 = threading.Thread(target=car, args=("Tesla",))
 car1.start()

@@ -1,5 +1,5 @@
 queue队列
 
-class queue.Queue(maxsize=0)			#先入先出
-class queue.LifoQueue(maxsize=0)		#last in first out,后进先出
+class queue.Queue(maxsize=0)			#先入先出，FIFO(first in first out)
+class queue.LifoQueue(maxsize=0)		#后进先出，LIFO(last in first out)
 class queue.PriorityQueue(maxsize=0)	#存储数据时可设置优先级的队列
