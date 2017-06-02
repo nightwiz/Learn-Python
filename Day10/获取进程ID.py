@@ -9,7 +9,10 @@ def info(title):
     print("\n\n")
 
 def f(name):
-    info('\033[31;1mfunction f\033[0m')
+    info('\033[31mcalled from child process function f\033[0m')
     print("hello", name)
 
 if __name__ == "__main__":
+    info("\033[32mmain process line\033[0m")
+    p = Process(target=f, args=('bob',))
+    p.start()
