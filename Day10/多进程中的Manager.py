@@ -1,5 +1,6 @@
-from multiprocessing import Process,Manager
+from multiprocessing import Process, Manager
 import os
+
 
 def f(d, l):
     #往字典里添加key，value
