@@ -20,14 +20,13 @@ def f(url):
 # time_start = time.time()
 #
 # for url in urls:
-#     print(url)
 #     f(url)
 # print("同步爬虫的cost时间：", time.time() - time_start)
 
 
 time_start = time.time()
 gevent.joinall([
-    gevent.spawn(f, "https://www.python.org/"),     #传入函数f以及f的参数
+    gevent.spawn(f, "https://www.python.org/"),     #生成一个协程，传入函数f以及f的参数
     gevent.spawn(f, "https://www.baidu.com/"),
     gevent.spawn(f, "https://github.com/"),
 ])
