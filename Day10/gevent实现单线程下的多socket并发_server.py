@@ -12,16 +12,16 @@ def server(port):
     s.listen(500)
     while True:
         cli, addr = s.accept()
-        gevent.spawn(handle_request, cli)
+        gevent.spawn(handle_request, cli)   #启动一个协程，传入handle_request函数以及函数的参数cli
 
-def handle_request(conn):
+def handle_request(conn):       #conn 就是上面代码中的cli
     try:
         while True:
             data = conn.recv(1024)
             print("recv", str(data, encoding='utf-8'))
             conn.send(data)
             if not data:
-                break
+                conn.shutdown(socket.SHUT_WR)
     except Exception as ex:
         print(ex)
     finally:
