@@ -1,3 +1,3 @@
 Learn-Python
 ====
-#我的Python学习历程
+#我的Python学习经过
