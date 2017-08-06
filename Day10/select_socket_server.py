@@ -24,7 +24,7 @@ while True:
 
     for r in readable:
         if r is server:     #代表来了一个新链接
-            conn,addr = server.accept()
+            conn, addr = server.accept()
             print("来了个新链接", addr)
             inputs.append(conn)  #将这个链接加入到监测队列中；
             # 因为这个新建立的链接现在还没发数据过来，现在就接收程序就报错。所以要想实现这个客户端发数据来时server端能知道，就需要让select再监测这个conn
@@ -37,9 +37,9 @@ while True:
             # r.send(data)
             # print("send done...")
 
-    for w in writeable:     #要返回给客户端的链接列表
+    for w in writeable:                     #要返回给客户端的链接列表
         data_to_client = msg_dic[w].get()
-        w.send(data_to_client)  #返回给客户端源数据
+        w.send(data_to_client)              #返回给客户端源数据
 
         outputs.remove(w)   #确保下次循环的时候writeable不返回已经处理完的链接
 
