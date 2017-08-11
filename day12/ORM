@@ -1,0 +1,18 @@
+ORM，全程object relational mapping，就是对象映射关系程序
+通过ORM将编程语言的对象模型和数据库关系模型建立映射关系，这样我们在使用编程语言对数据库进行操作的时候
+可以直接使用编程语言的对象模型进行操作就可以了，而不用直接使用SQL
+
+ORM的优点：
+1，隐藏了数据访问细节，“封闭”的通用数据库交互，ORM的核心。他使得我们的通用数据库交互变得简单易行，并且完全不用考虑sql语句。快速开发
+2，ORM使我们构造固化数据结构变得简单易行。
+
+在python中，最有名的ORM框架是SQLAlchemy
+
+创建一个表的SQL
+CREATE TABLE user(
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    name VARCHAR(32),
+    password VARCHAR(64),
+    PRIMARY KEY (id)
+)
+
