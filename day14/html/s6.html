@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form enctype="multipart/form-data">
+        <div>
+            输入用户名：<input type="text">
+            <p>请选择性别:</p>
+
+            <!-- 单选框radio，name同名互斥，只能单选；通过value值区分 -->
+            <!-- checked属性，表示这个默认被选中 -->
+            男：<input type="radio" name="gender" value="1" checked="checked" />
+            女：<input type="radio" name="gender" value="2" />
+            中：<input type="radio" name="gender" value="3" />
+            <p>爱好</p>
+
+            <!-- checkbox复选框 name属性(批量获取数据)，通过value值区分-->
+            足球：<input type="checkbox" name="favor" value="1" checked="checked" />
+            篮球：<input type="checkbox" name="favor" value="2" />
+            羽毛球：<input type="checkbox" name="favor" value="3"/>
+            乒乓球：<input type="checkbox" name="favor" value="4" />
+            <p>技能</p>
+            游戏：<input type="checkbox" name="skill" value="1" />
+            足球：<input type="checkbox" name="skill" value="2" checked="checked" />
+            <p>上传文件</p>
+            <input type="file" />
+
+            <!--多行文本输入框 默认值放中间 有name属性-->
+            <textarea name="multext">这是默认值</textarea>
+
+            <!-- select单选下拉框，后台通过value属性获取数据 selected="selected"设置默认选中 -->
+            <!-- size默认为1 -->
+            <select name="city">
+                <option value="1">广州</option>
+                <option value="2" selected="selected">深圳</option>
+                <option value="3">潮州</option>
+            </select>
+
+            <!-- select multiple多选 size默认为1，此处设为10-->
+            <select name="city" size="10" multiple="multiple">
+                <option value="1">广州</option>
+                <option value="2"  selected="selected">深圳</option>
+                <option value="3">潮州</option>
+            </select>
+
+            <!-- select分组 -->
+            <select>
+                <optgroup label="广东省">
+                    <option>深圳</option>
+                    <option>广州</option>
+                </optgroup>
+            </select>
+
+        </div>
+        <input type="submit" value="提交" name="filename" />
+        <input type="reset" value="重置" />
+    </form>
+</body>
+</html>
