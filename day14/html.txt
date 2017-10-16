@@ -188,6 +188,7 @@ CSS
             
             
         8、padding  margin(0,auto)
+			边距，内边距，外边距
             
             
     
