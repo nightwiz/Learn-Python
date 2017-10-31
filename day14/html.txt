@@ -162,13 +162,13 @@ CSS
              - border-left
         
         5、  
-            height，         高度 百分比
-            width，          宽度 像素，百分比
-            text-align:ceter, 水平方向居中
-            line-height，垂直方向根据标签高度
-            color、     字体颜色
-            font-size、 字体大小
-            font-weight 字体加粗
+            height，         	高度 百分比
+            width，          	定义宽度：像素，百分比
+            text-align:ceter, 	水平方向居中
+            line-height，		垂直方向根据标签高度
+            color、     		字体颜色
+            font-size、 		字体大小
+            font-weight 		字体加粗
         
         6、float
             让标签浪起来，块级标签也可以堆叠
@@ -188,6 +188,13 @@ CSS
             
             
         8、padding  margin(0,auto)
+			边距，内边距，外边距
+			
+			margin：外边距
+			padding：内边距
+			
+			margin-top：离上边高度（默认为0），自身的高度不变。
+			padding-top：
             
             
     
