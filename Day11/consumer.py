@@ -18,6 +18,7 @@ def callback(ch, method, properties, body):     #ch,管道的内存对象
 
 #消费消息；如果收到消息，就调用callback函数来处理消息
 #加上no_ack=True,表示消息不管是否处理完都不返回消息；默认为ack
+
 channel.basic_consume(callback,
                       queue='hello',
                       )
