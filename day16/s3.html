@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .pg-header{
+            height: 48px;
+            background-color: #2459a2;
+            color: white;
+        }
+        .pg-header .logo{
+            height: 48px;
+            width: 200px;
+            background-color: cadetblue;
+            text-align: center;
+        }
+        .pg-header .user{
+            margin-right: 60px;
+            padding: 0 20px;
+            color: white;
+            text-align: center;
+        }
+        .pg-header .user:hover{
+            background-color: blue;
+        }
+        .pg-header .user .a img{
+            height: 40px;
+            width: 40px;
+            margin-top: 4px;
+            border-radius: 50%;
+        }
+        .pg-header .user .b{
+            z-index: 20;
+            position: absolute;
+            top: 48px;
+            right: 44px;
+            background-color: red;
+            width: 160px;
+            #display: none;
+        }
+        .pg-content .menu{
+            position: absolute;
+            top: 48px;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            background-color: #dddddd;
+        }
+        .pg-content .content{
+            position: absolute;
+            top: 48px;
+            right: 0;
+            bottom: 0;
+            left: 200px;
+            overflow: auto;
+            z-index: 9;
+        }
+    </style>
+</body>
+    <div class="pg-header">
+        <div class="logo left">
+            ALLINSTAR
+        </div>
+        <div class="user right" style="position: relative">
+            <a class="a" herf="#">
+                <img src="1.jpg">
+            </a>
+            <div class="b">我的资料</div>
+            <div class="b">注销</div>
+        </div>
+    </div>
+    <div class="pg-content">
+        <div class="menu left">a</div>
+        <div class="content left">
+            <div style="background-color: purple">
+            <p style="margin: 0">asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p><p>asdf</p>
+                </div>
+        </div>
+    </div>
+    <div class="pg-footer"></div>
+</html>
+
+
+<!--页面布局2，这种用的最多-->

@@ -239,7 +239,7 @@ obj.shift()         头部移除元素
 obj.splice(start, deleteCount, value, ...)  插入、删除或替换数组的元素
                     obj.splice(n,0,val) 指定位置插入元素
                     obj.splice(n,1,val) 指定位置替换元素
-                    obj.splice(n,1)     指定位置删除元素
+                    obj.splice(n,1)     指定位置删除元素   
 obj.slice( )        切片
 obj.reverse( )      反转
 obj.join(sep)       将数组元素连接起来以构建一个字符串
