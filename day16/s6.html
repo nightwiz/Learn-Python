@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div style="width: 600px;margin: 0 auto;">
+        <input id="i1" onfocus="Focus();" onblur="Blur();" type="text" value="请输入关键字" />
+        <input type="text" placeholder="请输入关键字" />
+    </div>
+    <script>
+        function Focus(){   //当鼠标移动到input的时候，获取焦点；
+            var tag = document.getElementById('i1');
+            var val = tag.value;
+            if(val=="请输入关键字"){
+                tag.value = "";
+            }
+        }
+        function Blur(){    //当鼠标移动到非input区域的时候，失去焦点；
+            var tag = document.getElementById('i1');
+            var val = tag.value;
+            if(val == ""){  //判断value是否为空，或者length==0；
+                tag.value = "请输入关键字";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!--新版浏览器可以通过 <input type="text" placeholder="请输入关键字" /> 实现-->
