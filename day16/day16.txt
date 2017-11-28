@@ -4,6 +4,7 @@ document.getElementById             根据ID获取一个标签
 document.getElementsByName          根据name属性获取标签集合
 document.getElementsByClassName     根据class属性获取标签集合
 document.getElementsByTagName       根据标签名获取标签集合
+
 2、间接查找
 
 parentNode          // 父节点
