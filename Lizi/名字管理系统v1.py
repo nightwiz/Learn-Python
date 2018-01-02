@@ -49,6 +49,6 @@ while True:
         else:
             print("查无此人")
     elif num == 5:
-        pass
+        break
     else:
         print("输入有误，请重新输入")
