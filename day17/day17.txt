@@ -145,8 +145,8 @@ jQuery
 
 		属性操作：
 				# 专门用于做自定义属性
-				$(..).attr('n')
-				$(..).attr('n','v')
+				$(..).attr('n')         # 获取属性n的值
+				$(..).attr('n','v')     # 设置属性n的值修改为v
 				$(..).removeAttr('n')
 
 				<input type='checkbox' id='i1'  />
