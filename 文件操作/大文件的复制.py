@@ -22,11 +22,15 @@ new_file = open(new_file_name,"w")
 
 
 # 从旧文件中读取数据，写入到新文件中
-content = old_file.read()
-new_file.write(content)
+while True:
+    content = old_file.read(1024)   # 循环去 读取1024字节
+
+    if len(content) == 0:           # 当长度为0时，即读取完毕跳出退出循环
+        break
+
+    new_file.write(content)         # 写入循环读取的数据
 
 
 # 关闭两个文件
 old_file.close()
 new_file.close()
-
