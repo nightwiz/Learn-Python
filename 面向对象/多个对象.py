@@ -2,7 +2,7 @@
 class Cat:
     # 属性
 
-    # 方法，定义方法的时候，第一个参数需要写上self。
+    # 方法，定义方法的时候，第一个参数需要写上self（也可以是其他单词），用来接收当前这个对象。
     # self的作用是:你通过哪个对象去调用这个方法，self就指向该对象。
     def eat(self):
         print("猫在吃鱼...")
@@ -36,7 +36,7 @@ tom.age = 40
 
 
 # 获取属性的第2种方式
-tom.introduce()     # tom去调用introduce的时候，self就是tom
+tom.introduce()     # tom去调用introduce的时候，self就是tom。相当于tom.introduce(tom)
 
 
 lanmao = Cat()
