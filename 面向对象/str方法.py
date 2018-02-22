@@ -5,8 +5,14 @@ class Cat:
 
     # 初始化对象
     # init方法又叫魔法方法
-    def __init__(self):
-        print("----haha----")
+    def __init__(self,new_name,new_age):
+        self.name = new_name
+        self.age = new_age
+
+
+    # 对象描述信息
+    def __str__(self):
+        return "%s的年龄是%d" % (self.name, self.age)
 
     def eat(self):
         print("猫在吃鱼...")
@@ -20,20 +26,10 @@ class Cat:
         print("%s的年龄是%d" % (self.name, self.age))
 
 
-# 创建一个对象tom，指向Cat这个类的引用
-tom = Cat()
+# 创建一个对象tom，指向Cat这个类的引用，并传入name和age参数
+tom = Cat("tom", 40)
 
-tom.eat()
-tom.drink()
-tom.name = "汤姆"
-tom.age = 40
+lanmao = Cat("蓝猫", 10)
 
-
-# 获取属性的第2种方式
-tom.introduce()     # 相当于tom.introduce(tom)
-
-lanmao = Cat()
-lanmao.name = "蓝猫"
-lanmao.age = 10
-
-lanmao.introduce()
+print(tom)
+print(lanmao)
