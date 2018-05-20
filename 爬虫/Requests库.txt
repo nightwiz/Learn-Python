@@ -15,7 +15,7 @@ requests.get(url,params=None,**kwargs)
     params：url中的额外参数，字典或字节流格式，可选
     **kwargs：12个控制访问参数
 
-获取一个网页的最简单方法
+# 获取一个网页的最简单方法
 # 构造一个向服务器请求资源的Request对象，返回一个包含服务器资源的Response对象
 r = requests.get(url)
 
@@ -26,3 +26,15 @@ r.text                  HTTP响应内容的字符串形式，即url对应的页�
 r.encoding              从HTTP header中猜测的响应内容编码方式
 r.apparent_encoding     从内容中分析出的响应内容编码方式（备选编码方式）
 r.content               HTTP响应内容的二进制形式
+
+
+理解Request库的异常
+request.ConnectionError     网络连接错误异常，如DNS查询失败、拒绝连接等
+request.HTTPError           HTTP错误异常
+request.URLRequired         URL缺失异常
+request.TooManyRedirects    超过最大重定向次数，产生重定向异常
+request.ConnectTimeout      连接远程服务器超时异常
+request.Timeout             请求URL超时，产生超时异常
+
+异常：
+r.raise_for_status()        如果不是200，产生异常requests.HTTPError
